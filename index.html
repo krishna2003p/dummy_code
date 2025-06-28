@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Application</title>
+
+        <!-- Internal CSS -->
+         <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            nav {
+                background-color: #9b9898;
+                color: #e7e7f1;
+                padding: 1rem;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 1rem;
+            }
+            nav ul li a {
+                color: #f8f8fa;
+                text-decoration: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #ece5e5;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+                padding-top: 4px;
+            }
+            .dropdown-content a {
+                color: #7078ec;
+                /* padding: 12px 16px; */
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+            /* main {
+                padding: 1rem;
+            } */
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+            #home{
+                background-color: #f0f0f0;
+                padding: 1rem;
+                margin-top: 0px;
+                border-radius: 8px;
+            }
+         </style>
+    </head>
+    <body>
+       <!-- Nav bar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#app-development">App Development</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Main content -->
+        <main>
+            <section id="home">
+                <h1>Welcome to My Application</h1>
+                <p>This is the home section.</p>
+                <p>Additional content can go here.</p> 
+                <p>Feel free to explore the sections below.</p>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Learn more about our application.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>Explore the services we offer.</p>
+            </section>
+            <section id="web-development">
+                <h3>Web Development</h3>
+                <p>Details about web development services.</p>
+            </section>
+            <section id="app-development">
+                <h3>App Development</h3>
+                <p>Details about app development services.</p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 My Application. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
