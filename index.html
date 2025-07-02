@@ -1,127 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Application</title>
 
-        <!-- Internal CSS -->
-         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-            }
-            nav {
-                background-color: #9b9898;
-                color: #e7e7f1;
-                padding: 1rem;
-            }
-            nav ul {
-                list-style: none;
-                padding: 0;
-            }
-            nav ul li {
-                display: inline;
-                margin-right: 1rem;
-            }
-            nav ul li a {
-                color: #f8f8fa;
-                text-decoration: none;
-            }
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #ece5e5;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-                padding-top: 4px;
-            }
-            .dropdown-content a {
-                color: #7078ec;
-                /* padding: 12px 16px; */
-                text-decoration: none;
-                display: block;
-            }
-            .dropdown-content a:hover {
-                background-color: #ddd;
-            }
-            /* main {
-                padding: 1rem;
-            } */
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 1rem;
-                position: relative;
-                bottom: 0;
-                width: 100%;
-            }
-            #home{
-                background-color: #f0f0f0;
-                padding: 1rem;
-                margin-top: 0px;
-                border-radius: 8px;
-            }
-         </style>
-    </head>
-    <body>
-       <!-- Nav bar -->
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#services">Services</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#web-development">Web Development</a></li>
-                        <li><a href="#app-development">App Development</a></li>
-                    </ul>
-                </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uniweb Creation</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <!-- Nav bar -->
+  <header>
+    <div class="header-container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/uniweb.png" alt="Logo" />
+      </div>
+
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Career</a></li>
+          <li class="dropdown">
+            <a href="#services">Services</a>
+            <ul class="dropdown-content">
+              <li><a href="#web-development">Web Development</a></li>
+              <li><a href="#app-development">App Development</a></li>
             </ul>
-        </nav>
-        <!-- Main content -->
-        <main>
-            <section id="home">
-                <h1>Welcome to My Application</h1>
-                <p>This is the home section.</p>
-                <p>Additional content can go here.</p> 
-                <p>Feel free to explore the sections below.</p>
-            </section>
-            <section id="about">
-                <h2>About Us</h2>
-                <p>Learn more about our application.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Get in touch with us.</p>
-            </section>
-            <section id="services">
-                <h2>Our Services</h2>
-                <p>Explore the services we offer.</p>
-            </section>
-            <section id="web-development">
-                <h3>Web Development</h3>
-                <p>Details about web development services.</p>
-            </section>
-            <section id="app-development">
-                <h3>App Development</h3>
-                <p>Details about app development services.</p>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 My Application. All rights reserved.</p>
-        </footer>
-    </body>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="social-icons-header">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <!-- Main content -->
+  <main>
+    <div class="slider-container">
+
+      <!-- Radio Buttons -->
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+
+      <!-- Slides -->
+      <div class="slides">
+        <div class="slide s1">
+          <img src="images/slider1.jpg" alt="Slide 1" />
+        </div>
+        <div class="slide s2">
+          <img src="images/slider2.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide s3">
+          <img src="images/slider3.jpg" alt="Slide 3" />
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="navigation-manual">
+        <label for="slide1" class="manual-btn"></label>
+        <label for="slide2" class="manual-btn"></label>
+        <label for="slide3" class="manual-btn"></label>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="footer-content">
+
+      <!-- Branding and Description -->
+      <div class="footer-brand">
+        <h2>Uniweb Creation</h2>
+        <p>Innovative web and app solutions tailored for growth and performance.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Uniweb Creation. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
